@@ -11,26 +11,26 @@
 What it means called by value in C?
 What are the values being passed when arguments are integer and char array respectively?
 
-**Answer**: Call by value in C is a method. It is a method for passing arguments in which the value of the actual parameter is copied onto the formal parameter of the function. The two types of parameters are stored at differenet memory locations. 
+**Answer**: Call by value in C is a method. It is a method for passing arguments in which the value of the actual parameter is copied onto the formal parameter of the function. The two types of parameters are stored at differenet memory locations. The values are converted to pointers on the initial function when arguments are integer and char array. 
 
 ### 2. Scope (10 Points)
 
 What is the scope of a variable in C? What's the usage of the
 key word *extern* in C?
 
-**Answer**:
+**Answer**: The scope of a variable is its lifetime in the program. It is the entire block of code of that variable through the program, such as when the variable is declared, used, and can be modified. The useage of the key word *extern* in C specifies that the function is defined elsewhere (extend visability) and uses the C-langauge calling convention. 
 
 ### 3. Static (10 Points)
 
 What is the static key word means for an external and an internal variable?
 
-**Answer**:
+**Answer**: The static key word for an external and an internal variable means that the function is invisable to the linker. 
 
 ### 4. Commandline Arguments (10 Points)
 
 How to use commandline arguments in C? Give an example.
 
-**Answer**:
+**Answer**: To use commandline arguments add them in the main() function. An example is printf("Name: %s\n", argv[0]);
 
 # Part2: Coding  (60 Points)
 
