@@ -11,7 +11,7 @@
 What it means called by value in C?
 What are the values being passed when arguments are integer and char array respectively?
 
-**Answer**:
+**Answer**: Call by value in C is a method. It is a method for passing arguments in which the value of the actual parameter is copied onto the formal parameter of the function. The two types of parameters are stored at differenet memory locations. 
 
 ### 2. Scope (10 Points)
 
