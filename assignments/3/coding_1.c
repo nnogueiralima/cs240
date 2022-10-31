@@ -31,7 +31,16 @@ char *getLine(String *s) {
 }
 
 int *solution(int L, char *S, int *res) {
-    /*Complete this function*/
+    res = 1; 
+    *res = '1';
+    for (int i = 1; 1 <= i <= L; i++) {
+        if (S[i-1] < S[i] {
+            s1 += 1;
+            *res(+i) = S[i];
+        } else {
+            s1 = 1;
+        }
+    }
 
     return res;
 }
