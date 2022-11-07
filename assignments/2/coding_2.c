@@ -33,6 +33,21 @@ char *getLine(String *s) {
 
 int solution(char *S, char *F) {
     /*Complete this function*/
+    long left = -1 - l, right = l << 1, res = 0, dp[l];
+    memset(&dp, 0, l * sizeof (long ));
+//  or using a for loop
+//  for (int i = 0; i < l; i++) dp[i] = 0;
+
+    for (int i = 0; S[i]; i++) {
+        if (S[i] == '1') left = i;
+        dp[i] = i - left;
+    }
+    for (int i = l - 1; i >= 0; i--) {
+        if (S[i] == '1') right = i;
+        if (dp[i] > right - i) dp[i] = right - i;
+    }
+    for (int i = 0; S[i]; i++) res += dp[i];
+    return res;
 }
 
 int main(int argc, char *argv[]) {
