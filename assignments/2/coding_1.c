@@ -39,7 +39,7 @@ char *solution(int D, int C, int M, char *S) {
 
 }
 
-int maino(int argc, char *argv[]) {
+int man(int argc, char *argv[]) {
     int t, D, C, M, L;
     String s1 = {malloc(10), 0, 10},
             s2 = {malloc(10), 0, 10};
