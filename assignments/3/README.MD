@@ -8,22 +8,18 @@
 
 ### 1. How to add custom search path for header files and libraries file for gcc compiling (10 Points)
 
-**Answer**: To add a custom search path for header files for gcc compiling. One option is to use -Idir, and another option is to us env variable, such as CPATH 
-or C\_INCLUDE\_PATH. An example is CPATH=/home/haoyu/headers gcc -c foo.c -o foo.c. For a custom path for library files for gcc compiling there are also two options. 
-One option is -L<dir_path> or the env variable such as LIBRARY_PATH. An example is LIBRARY_PATH=/home/haoyu/lib gcc -c foo.c -o foo.c. 
+**Answer**: 
 
 ### 2. How to create a int array of length 100 using heap memory (10 Points)
 
-**Answer**: To create an int array of length 100 using heap memory. Create an int pointer such as "int *p;" then allocate the space of int 100 times with malloc 
-"p = (int*)malloc(100*sizeof(int));). This will create an array in heap memory: *p = p[0], *(p+1) = p[1], ..., *(p+99) = p[99].
-
+**Answer**: 
 ### 3. Give each an example of dangling pointer and wild pointer (10 Points)
 
-**Answer**: A example of a dangling pointer is if int dp and alloacted ("int *dp = (int*)malloc(sizeof(int);") then it is freed with ("free(dp)") and the dp is called again after. A wild pointer is called before malloc so it is created ("int *wp;") and then (*wp = 1). 
+**Answer**: 
 
 ### 4. What are the four different segments of a C program runtime memory layout and what are they used of? (10 Points)
 
-**Answer**: The four different segments of a C program runtime memory layout are text segment, data segment, heap, and stack. Text segment is used for machine instructions of the program. Data segmnet is used for global variables, constants, and local constant varibales. Heap is a dynamically allocated space, which can be done with malloc(). Stack is the runtime call stack used for storing return address, actual call values, local (automatic) variables, and returned value. 
+**Answer**:
 
 # Part2: Coding  (60 Points)
 
